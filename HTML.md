@@ -6,3 +6,4 @@ meta> is that describes information called metadata.
 title> is that describes the title of the document.  
 link> is that describes CSS of the document. To represent css, specify "stylesheet" in the "rel" attribute and the stylesheet URL in the "herf" attribute.  
 body> is represents text.  Elements below the hierarchy include h1>, p>, etc.  
+img> is represents image. To represent an image, specify file location in the "src" attribute and image description in the "alt" attribute.  
