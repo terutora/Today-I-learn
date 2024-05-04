@@ -47,7 +47,25 @@ squares = {i**2 for i in range(5)}
 print(squares)
 # {0, 1, 4, 9, 16}
 ```
-<li>辞書に対してgetメソッドを積極的に使う</li>
+### 辞書に対してgetメソッドを積極的に使う</li>
+辞書に存在しないキーを指定するとエラーが起こるのでgetメソッドを利用してエラーを未然に防ごう。また、第２引数に文字を指定するとデフォルト値を変更することもできる。ちなみにデフォルト値はNoneだ。
+
+```python:get_method.py
+d = {'key1': 'val1', 'key2': 'val2', 'key3': 'val3'}
+
+print(d.get('key1'))
+# val1
+
+print(d.get('key4'))
+# None
+
+print(d.get('key4', 'NO_KEY'))
+# NO_KEY
+
+p1rint(d('key4'))
+# TypeError: 'dict' object is not callable
+```
+
 <li>ジェネレータを覚える</li>
 <li>デコレータとwith構文を考える</li>  
 
