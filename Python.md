@@ -65,7 +65,24 @@ print(d.get('key4', 'NO_KEY'))
 p1rint(d('key4'))
 # TypeError: 'dict' object is not callable
 ```
+### ジェネレータを覚える
+##### そもそもジェネレータって？
+関数の処理の途中で一度処理を中断することができる。また、再開もできる  
+##### なぜ使うのか
+ジェネレータの最大の利点は、メモリ効率性。ジェネレータは全ての結果をメモリに保持しないため、大規模なデータを扱う際に役立つ。また、結果が必要となるまで計算を遅延するため、パフォーマンスの向上にも期待できる。
 
-<li>ジェネレータを覚える</li>
+```python:generate.py
+def gen():
+    while True: 　　　　　　#無限ループ
+        yield "start"
+        yield "middle"
+        yield "end" 
+
+gen_obj = gen()
+print(next(gen_obj),end=" ")
+print(next(gen_obj),end=" ")
+print(next(gen_obj),end=" ")
+print(next(gen_obj),end=" ")
+# 
 <li>デコレータとwith構文を考える</li>  
 
