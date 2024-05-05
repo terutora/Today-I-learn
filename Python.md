@@ -83,6 +83,10 @@ print(next(gen_obj),end=" ")
 print(next(gen_obj),end=" ")
 print(next(gen_obj),end=" ")
 print(next(gen_obj),end=" ")
-# 
+# start middle end start
+```
+このように無限ループしているはずなのにエラーが起きない！！
+
+
 <li>デコレータとwith構文を考える</li>  
 
